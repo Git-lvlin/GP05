@@ -63,9 +63,12 @@
 .......
 
 ## 分支操作
-- git branch
+- git branch 查看当前所以分支
 - 当前分支名前有个*号
 - git branch 分支名 创建一个分支
 - git checkout 分支名 (切换分支)
+- git merge 分支名 (合并某分支到当前分支)
+- git branch -d 分支名 (删除分支)
+- git push origin 分支名
 ## test分支
 - 添加内容。。。。。。
