@@ -27,3 +27,22 @@
 - git add 文件名
 - 将工作区的变动提交到暂存区
 - git add . 将所有变动提交到暂存区
+
+## 查看状态
+- git status ( 辅助命令 )
+- 查看工作区和暂存区的状态(增删改)
+
+
+## 提交到本地仓库
+- git commit -m '提交注释'
+- 将代码从暂存区提交到本地仓库
+- git status 查看状态提示：工作区是干净的，没有任何东西需要提交
+
+## 本地操作关键步骤
+1、git init(第一次需要，以后不需要弄)
+2、git add .
+3、git commit -m '注释'
+
+## 全局配置
+- $ git config --global user.name 'Git-lvlin'( GitHub名称 )
+- $ git config --global user.email '1172383239@qq.com'( 邮箱 )
