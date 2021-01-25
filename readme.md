@@ -26,23 +26,25 @@
 ## 提交到暂存区
 - git add 文件名
 - 将工作区的变动提交到暂存区
-- git add . 将所有变动提交到暂存区
+- git add . 将所有变动提交到暂存区git
 
-## 查看状态
-- git status ( 辅助命令 )
-- 查看工作区和暂存区的状态(增删改)
+## 查看变动
+- git diff 文件名
+- 会列出该文件前后的差异
 
+## 创建远程仓库
+- 进入GitHub官网
+- 创建一个新的远程
 
-## 提交到本地仓库
-- git commit -m '提交注释'
-- 将代码从暂存区提交到本地仓库
-- git status 查看状态提示：工作区是干净的，没有任何东西需要提交
+## 将本地仓库与远程仓库关联
+- git remote add origin https://github.com/Git-lvlin/GP05.git(你的远程仓库地址)
+- git remote -v  查看本地仓库关联的远程仓库地址
 
-## 本地操作关键步骤
-1、git init(第一次需要，以后不需要弄)
-2、git add .
-3、git commit -m '注释'
+##将本地仓库提交到远程仓库
+- git push -u origin master 第一次提交到远程
+-git push 将本地仓库提交到远程仓库
+- -u origin master 设置默认的提交地址和分支
 
-## 全局配置
-- $ git config --global user.name 'Git-lvlin'( GitHub名称 )
-- $ git config --global user.email '1172383239@qq.com'( 邮箱 )
+## 修改关联的远程仓库地址
+- git remote rm origin
+- git remote add origin
